@@ -1,0 +1,178 @@
+.header {
+
+    // .header__swiper
+
+    &__swiper {}
+
+    // .header__wrapper
+
+    &__wrapper {}
+
+    // .header__slide
+
+    &__slide {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 30px;
+        overflow: hidden;
+        &::before{
+            content:'';
+            
+        }
+                &.slide-norw{
+                    background-image: url('../img/01.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                &.slide-Austria {
+                    background-image: url('../img/02.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                &.slide-UAE{
+                    background-image: url('../img/03.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                &.slide-Thailand{
+                    background-image: url('../img/04.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                &.slide-Morocco{
+                    background-image: url('../img/05.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+        cursor: grab;
+        &:active{
+            cursor: grabbing;
+        }
+    }
+
+    // .header__itemCenter
+
+    &__itemCenter {}
+
+    // .header__subTitel
+
+    &__subTitel {
+        color: rgba(255, 255, 255, 0.70);
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 16.5px;
+    }
+
+    // .header__title
+
+    &__title {
+        color: #FFF;
+
+        font-size: 150px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    // .header__itemFooter
+
+    &__itemFooter {
+        display: flex;
+        gap: 20px ;
+        @media (max-width:768px){
+              flex-direction: column;
+              width: 70%;
+        }
+    }
+
+    // .header__subItem
+
+    &__subItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        min-height: 70px;
+        color: #FFF;
+        gap: 20px  ;
+        position: relative;
+        padding: 20px 40px;
+        border-radius: 5px;
+        &::before{
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background: #FFF;
+            
+            filter: blur(1px);
+        }
+    }
+
+    // .header__imgIcon
+
+    &__imgIcon {
+       width: 32px;
+       height: 32px;
+    }
+
+    // .header__subBlock
+
+    &__subBlock {
+        p{
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 5px;
+        }
+        span{
+          
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            opacity: 0.4;
+        }
+    }
+}
+.swiper-pagination-current {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.swiper-scrollbar {
+   height: 2px !important;
+   border-radius: 0 !important;
+   background-color: #FFFFFF4D !important;
+   width: 100% !important;
+   
+}
+.swiper-scrollbar-drag {
+    border-radius: 0 !important;
+    background-color: #FFF !important;
+    
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.slide-norw {
+}
+.swiper-slide {
+}

@@ -1,0 +1,83 @@
+//<Подключаем шрифты>=======================================================================================
+//&display=swap&subset=cyrillic-ext
+@import "fonts";
+@import url("https://fonts.googleapis.com/css?family=Montserrat: 400,500,600,700&display=swap&subset=cyrillic-ext");
+
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "header";
+@import "home";
+@import "slide";
+@import "footer";
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "null";
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+
+//</Шрифт по умолчанию>==========================================================================================
+
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+	
+  }
+
+.page {
+  padding: 0px 0px 0px 0px;
+	flex: 1 1 auto;
+}
+
+.lock {
+	overflow: hidden;
+}
+.title {
+	font-size: clamp(3.75rem, -3.085rem + 14.24vw, 9.375rem);
+}
+.subtitle {
+	font-size: clamp(1.563rem, 1.183rem + 0.79vw, 1.875rem);
+}
+//<Адаптив сетка>===========================================================================================================
+
+._container {
+	max-width: 1320px;
+	margin: 0px auto;
+	padding: 0px 10px 0px 10px;
+	@media (max-width: 1130px) {
+		max-width: 950px;
+	}
+	@media (max-width: 992px) {
+		max-width: 750px;
+	}
+	@media (max-width: 768px) {
+		max-width: none;
+		padding: 0px 10px;
+	}
+}
+//======================
+// ======= вешаем hover на псевдоэлемент=======
+// &::after{
+// 	content:'';
+// 	height: 1px;
+// 	max-width: 384px;
+// 	background-color: #1344C0;             
+// 	opacity: 0;
+// 	display: block;
+// 	margin: 10px 0px 0px 0px;
+   
+					   
+// } 
+
+// &:hover{
+				
+// &::after {
+// 	content: '';
+// 	opacity: 1;
+// 	transition: all 0.8s ease 0.1s;
+	
+// }
+			
+// }
+  
+
